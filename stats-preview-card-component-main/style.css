@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    height: 100vh;
+    background-color:hsl(233, 47%, 7%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 330px;
+    height: 650px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+.img-sec{
+    border-radius: 14px;
+    height: 32%;
+    width: 100%;
+    background:linear-gradient(hsla(277,100%,25%), rgba(255,255,255,0)), url(images/image-header-mobile.jpg);
+    background-size: cover;
+
+}
+
+.info{
+    color: white;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: white;
+    padding: 2rem 1rem;
+    letter-spacing: -1px;
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.des{
+    font-size: 1rem;
+    padding: 0 3.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.overview{
+    padding: 1rem;
+}
+
+.overview span{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.overview p{
+    font-size: 12px;
+    font-weight: bold; 
+    color: hsla(0, 0%, 100%, 0.6);  
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+@media(min-width:1440px){
+    .card{
+        height: 25rem;
+        width: 60rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .img-sec{
+        background: linear-gradient(hsla(277,100%,25%), rgba(255,255,255,0)), url(images/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info{
+        text-align: left;
+    }
+
+    h2{
+        padding: 2rem 3rem;
+    }
+    .overviews{
+        margin: 2rem;
+    }
+
+    .overview{
+        display: inline-block;
+    }
+
+    .overview p{
+        font-size: 1rem;
+    }
+}
